@@ -16,10 +16,10 @@
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
 
   
-
-  <body>
+    </head>
+  <body style="padding-top: 50px;">
    
-    @yield('content')
+    
       
     <nav class="navbar navbar-inverse navbar-fixed-top">
       <div class="container">
@@ -42,12 +42,10 @@
       </div>
     </nav>
 
-    <div class="container">
+    <div class="content">
         
-
-      <div class="starter-template">
-        <h1>Bootstrap starter template</h1>
-        <p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
+      <div class="starter-template" style="padding-top: 40px;">
+           @yield('content')
       </div>
 
     </div><!-- /.container -->

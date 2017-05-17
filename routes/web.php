@@ -10,8 +10,11 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
+
+use Illuminate\Html;
 use \Illuminate\Support\Facades\Request;
 use App\Http\Controllers\PageController;
+//use Illuminate\Routing\Route;
 
   /*Route::get('salut/{slug}-{id}', ['as' => 'salut', function ($slug, $id) {
     //return "Slug : $slug, ID : $id";
@@ -36,3 +39,7 @@ Route::get('/salut/{name}', function ($name) {
 Route::get('about', 'PageController@about', function(){
     
 });
+//Route:resource('link', 'LinkController');
+Route::get('/links/create', 'LinkController@create');
+Route::post('/links/create', 'LinkController@store');
+Route::get('r/[id]', 'LinkController@show')->where('id0', '[0-9]+');

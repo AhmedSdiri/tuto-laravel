@@ -8,6 +8,6 @@ class PageController extends Controller
 {
     public function about()
     {
-        require ('../resources/views/pages/about.blade.php');
+        return  view('pages.about');
     }
 }
